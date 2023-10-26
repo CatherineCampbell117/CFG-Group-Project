@@ -1,2 +1,0 @@
-# CFG Group Project
- 
