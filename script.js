@@ -59,13 +59,7 @@ carbs: 0,
 fat: 0,
 protein: 0,
 },
-milkChocolateChips: {
-grams: 150,
-carbs: 94.65,
-fat: 45,
-protein: 6.3,
-}
-}
+
 
 
 
