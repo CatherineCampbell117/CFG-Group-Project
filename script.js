@@ -39,12 +39,18 @@ const chickenMushroomGnocchi = {
 
 
 
-// Recipe 3
-const warmChickenSalad () {
-    chicken: 2 pieces   
+// Recipe 3 
+//Warm Chicken salad recipe 
+const recipe3 = {
+    name: "Warm Chicken Salad.",
+    calories: "410",
+    fat: "20 ",
+    protein: "50",
+    ingredients: ["2 Chicken thighs, 2 tomatoes, 1 red pepper, 2 cups mixedleaf salad, 1 carrot, sea salt and black pepper, honey and mustered dressing, 2 spring onions."],
 }
 
-
+console.log(recipe3.ingredients)
+console.log (recipe3.name)
 // Recipe 4
  
 
