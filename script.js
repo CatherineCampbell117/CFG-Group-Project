@@ -10,9 +10,17 @@ const chickenMushroomGnocchi = {
 
 // Recipe 2
 
+
+
 // Recipe 3
+const warmChickenSalad () {
+    chicken: 2 pieces   
+}
+
 
 // Recipe 4
+ 
+
 
 // Recipe 5
 
