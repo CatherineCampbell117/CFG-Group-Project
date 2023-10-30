@@ -9,6 +9,63 @@ const chickenMushroomGnocchi = {
 }
 
 // Recipe 2
+// Chocolate Chip Cookie recipe 10 servings
+const chocolateChipCookie = {
+name: "Chocolate Chip Cookie",
+calories: 308,
+carbs: 35,
+fats: 16,
+protein: 3,
+ingredients: ["butter", "light brown sugar", "caster sugar", "egg", "vanilla extract", "plain flour", "bicarbonate of soda", "milk chocolate chips"],
+butter: {
+  grams: 120,
+  carbs: .1,
+  fat: 102.8,
+  protein: 1,
+},
+lightBrownSugar: {
+  grams: 75,
+  carbs: 73,
+  fat: 0,
+  protein: 0,
+},
+casterSugar: {
+  grams: 75,
+  carbs: 74.98,
+  fat: 0,
+  protein: 0,
+},
+egg: {
+  grams: 58,
+  carbs: .4,
+  fat: 4.6,
+  protein: 6.8,
+},
+vanillaExtract: {
+  grams: 5,
+  carbs: .53,
+  fat: 0,
+  protein: 0,
+},
+plainFlour: {
+  grams: 180,
+  carbs: 137.36,
+  fat: 1.76,
+  protein: 18.59,
+},
+bicarbonateOfSoda: {
+grams: 2.5,
+carbs: 0,
+fat: 0,
+protein: 0,
+},
+milkChocolateChips: {
+grams: 150,
+carbs: 94.65,
+fat: 45,
+protein: 6.3,
+}
+}
 
 
 
