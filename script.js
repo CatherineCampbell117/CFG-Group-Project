@@ -2,37 +2,10 @@
 const chickenMushroomGnocchi = {
     name: "Chicken and Mushroom Gnocchi",
     calories: 393,
-    ingredients: ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"],
-        gnocchi: {
-            grams: 125,
-            carbs: 45,
-            fat: 1,
-            protein: 4.5
-        },
-        chicken: {
-            grams: 120,
-            carbs: 0,
-            fat: 1,
-            protein: 28
-        },
-        mushrooms: {
-            grams: 40,
-            carbs: 0,
-            fat: 0,
-            protein: .5
-        },
-        softCheese: {
-            grams: 35,
-            carbs: 1,
-            fat: 4,
-            protein: 2.5
-        },
-        redOnion: {
-            grams: 25,
-            carbs: 2,
-            fat: 0,
-            protein: .2 
-    }
+    carbs: 40,
+    fat: 5,
+    protein: 25,
+    ingredients: ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"]
 }
 
 // Recipe 2
