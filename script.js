@@ -2,7 +2,7 @@
 const chickenMushroomGnocchi = {
     name: "Chicken and Mushroom Gnocchi",
     calories: 393,
-    ingredients: {
+    ingredients: ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"],
         gnocchi: {
             grams: 125,
             carbs: 45,
@@ -31,10 +31,8 @@ const chickenMushroomGnocchi = {
             grams: 25,
             carbs: 2,
             fat: 0,
-            protein: .2
-        }
+            protein: .2 
     }
-
 }
 
 // Recipe 2
@@ -44,3 +42,9 @@ const chickenMushroomGnocchi = {
 // Recipe 4
 
 // Recipe 5
+
+const caloriesAmount = document.getElementById('calories-amount').value;
+const carbsAmount = document.getElementById('carbs-amount').value;
+const fatAmount = document.getElementById('fat-amount').value;
+const ProteinAmount = document.getElementById('protiein-amount').value;
+
