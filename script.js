@@ -1,6 +1,7 @@
 // Recipe 1
 const chickenMushroomGnocchi = {
     name: "Chicken and Mushroom Gnocchi",
+    calories: 393,
     ingredients: {
         gnocchi: {
             grams: 125,
