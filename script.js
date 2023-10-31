@@ -73,8 +73,6 @@ const recipe3 = {
     ingredients: ["2 Chicken thighs, 2 tomatoes, 1 red pepper, 2 cups mixedleaf salad, 1 carrot, sea salt and black pepper, honey and mustered dressing, 2 spring onions."],
 }
 
-console.log(recipe3.ingredients)
-console.log (recipe3.name)
 // Recipe 4
  
 
