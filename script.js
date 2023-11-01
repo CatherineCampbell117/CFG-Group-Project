@@ -41,9 +41,9 @@ const chickenMushroomGnocchi = {
 //Warm Chicken salad recipe
 const recipe3 = {
   name: "Warm Chicken Salad.",
-  calories: "410",
-  fat: "20 ",
-  protein: "50",
+  calories: 410,
+  fat: 20,
+  protein: 50,
   ingredients: [
     "2 Chicken thighs", 
     "2 Tomatoes",
