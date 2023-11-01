@@ -98,35 +98,69 @@ const ratatouille = {
 
 
 // Recipe 5
+// Chicken fajita recipe 4 servings
+const chickenBreast = {
+  protein: 31,
+  carbs: 0,
+  fat: 3.6
+};
 
-// Chicken Fajita Recipe
-const chickenFajitaRecipe = {
-  name: "Chicken Fajita",
-  calories: 494,
-  carbs: 50,
-  fat: 20,
-  protein: 25,
-  ingredients: ["red pepper", "chicken" , "red chilli", "olive oil", "red onion" , "tortilla" , "lime", "garlic"]
+const recipes = [
+  chickenMushroomGnocchi,
+  chocolateChipCookie,
+  recipe3,
+  ratatouille,
+  chickenBreast,
+]
 
- 
+const findRecipesButton = document.getElementById('findRecipes')
+const recipeList = document.getElementById('list')
+const maxCaloriesInput = document.getElementById('maximun-calories-input')
 
-
-
-// const caloriesAmount = document.getElementById('calories-amount').value;
-// const carbsAmount = document.getElementById('carbs-amount').value;
-// const fatAmount = document.getElementById('fat-amount').value;
-// const ProteinAmount = document.getElementById('protiein-amount').value;
-
-document.getElementById("findRecipes").addEventListener("click", function() {
-  const filterRecipes = filterRecipes()
-
-  console.log(filterRecipes)
-
-  // convert this recipe in top dom element in the list to display it into the screen
-})
-
-function filterRecipes (criterion) {
-  // TODO use criterion (value from the inputs) to do the actual filtering
-  return chocolateChipCookie
-
+function getFilteredRecipes(criteria) {
+  return recipes.filter(function byCriteria(currentRecipe) {
+    return currentRecipe.calories <= criteria.maxCalories
+  })
 }
+
+findRecipesButton.addEventListener('click', function() {
+  const maxCaloriesInputValue = maxCaloriesInput.value // this is a string
+  // !!! this do not handle is the user types something else than a number !!!
+  const maxCalories = parseInt(maxCaloriesInputValue) // now it is a number
+
+  const criteria = {
+    maxCalories: maxCalories
+  } 
+  const filteredRecipes = getFilteredRecipes(criteria)
+
+  list.innerHTML = '' // to empty the list to start from scratch at every click
+
+  filteredRecipes.forEach(function(currentRecipe) {
+    
+
+    const recipename = document.createElement('span')
+    recipename.textContent = currentRecipe.name;
+    
+    const ingredientLabel = document.createElement('span')
+    ingredientLabel.textContent = 'Ingredients: '
+
+    const ingredientsList = document.createElement('ul')
+    currentRecipe.ingredients.forEach(function(currentIngredient) {
+      const ingredientItem = document.createElement('li')
+      ingredientItem.textContent = currentIngredient
+
+      ingredientsList.appendChild(ingredientItem)
+    })
+
+    const ingredientsListWrapper = document.createElement('div')
+    ingredientsListWrapper.appendChild(ingredientLabel)
+    ingredientsListWrapper.appendChild(ingredientsList)
+
+    const recipeItem = document.createElement('li')
+    recipeItem.appendChild(recipename)
+    recipeItem.appendChild(ingredientsListWrapper)
+    
+
+    recipeList.appendChild(recipeItem);
+  })
+})
