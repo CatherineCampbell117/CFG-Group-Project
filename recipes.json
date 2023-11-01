@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Chicken and Mushroom Gnocchi",
+        "calories": 393,
+        "carbs": 40,
+        "fat": 5,
+        "protein": 25,
+        "ingredients": ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"],
+        "steps": [
+          {
+            "durationInMinutes": 10,
+            "description": "pre-heat the oven, put it on thermostat 7 (180 deg)"
+          },
+          {
+            "durationInMinutes": 20,
+            "description": "pre-heat the oven"
+          },
+          {
+            "durationInMinutes": 10,
+            "description": "beat the eggs"
+          }
+        ]
+      }
+]
