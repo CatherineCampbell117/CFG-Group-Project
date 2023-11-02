@@ -2,7 +2,9 @@
 const chickenMushroomGnocchi = {
   name: "Chicken and Mushroom Gnocchi",
   calories: 393,
-
+  carbs: 40,
+  fat: 5,
+  protein: 25,
   ingredients: ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"],
   gnocchi: {
     grams: 125,
@@ -36,13 +38,6 @@ const chickenMushroomGnocchi = {
   },
 };
 
-  carbs: 40,
-  fat: 5,
-  protein: 25,
-  ingredients: ["gnocchi", "chicken", "mushrooms", "soft cheese", "red onion"]
-
-
-
 const plop = document.getElementById('list')
 console.log(plop)
 
@@ -54,7 +49,16 @@ const chocolateChipCookie = {
   carbs: 35,
   fats: 16,
   protein: 3,
-  ingredients: ["butter", "light brown sugar", "caster sugar", "egg", "vanilla extract", "plain flour", "bicarbonate of soda", "milk chocolate chips"],
+  ingredients: [
+    "butter", 
+    "light brown sugar",
+     "caster sugar",
+      "egg", 
+      "vanilla extract", 
+      "plain flour", 
+      "bicarbonate of soda",
+       "milk chocolate chips"
+      ],
   butter: {
     grams: 120,
     carbs: .1,
@@ -155,43 +159,67 @@ const warmChickenSalad = {
     ],
    method:[
     {
-    step1: "season chicken pieces on all surfaces and and fry on high heat for 5 minutes or untill cooked",
+    step1: "Season chicken pieces on all surfaces and and fry on high heat for 5 minutes or untill cooked",
     step2: " Wash the salad ingredients and place in a bowl and mix them together", 
     step3: "Place the cooked chicken on top of the salad, add salad dressing and enjoy",
     },
    ]
    }
-console.log(warmChickenSalad.ingredients)
-console.log(warmChickenSalad.method)
-
 
 
 // Recipe 4
 const ratatouille = {
-  name: "ratatouille",
+  name: "Ratatouille",
   calories: 450,
   carbs: 50,
   fat: 0,
   protein: 50,
-  ingredients: ["courgette", "aubergine", "onion", "red pepper", "garlic"]
+  ingredients: [
+    "courgette", 
+    "aubergine",
+    "onion", 
+    "red pepper",
+    "garlic"
+  ]
 }
 
 
 // Recipe 5
 // Chicken fajita recipe 4 servings
-const chickenBreast = {
-  protein: 31,
-  carbs: 0,
-  fat: 3.6
-};
 
-const recipes = [
+const chickenFajita = {
+  name: "Chicken Fajita",
+  calories: 494,
+  carbs: 50,
+  fat: 20,
+  protein: 25,
+  ingredients: [
+  "red pepper",
+  "chicken",
+  "red chilli",
+  "olive oil",
+  "red onion", 
+  "tortilla", 
+  "lime",
+  "garlic",
+]
+}
+
+ 
+
+
+
+let recipesList = [
   chickenMushroomGnocchi,
   chocolateChipCookie,
-  recipe3,
+  warmChickenSalad,
   ratatouille,
-  chickenBreast,
+  chickenFajita,
 ]
+
+
+
+
 
 // let totalProteins = chickenBreast.protein + redOnion.protein + redPepper.protein + redChili.protein + oliveOil.protein + lime.protein + tortillas.protein + mixedSalad.protein + freshSalsa.protein;
 // let totalFats = chickenBreast.fat + redOnion.fat + redPepper.fat + redChili.fat + oliveOil.fat + lime.fat + tortillas.fat + mixedSalad.fat + freshSalsa.fat;
@@ -213,11 +241,19 @@ const chickenFajitaRecipe = {
   carbs: 50,
   fat: 20,
   protein: 25,
-  ingredients: ["red pepper", "chicken" , "red chilli", "olive oil", "red onion" , "tortilla" , "lime", "garlic"]
+  ingredients: [
+    "red pepper", 
+    "chicken" , 
+    "red chilli",
+     "olive oil", 
+     "red onion" , 
+     "tortilla" 
+     , "lime", 
+     "garlic"
+    ]
+  }
 
  
-
-
 
 
 // const caloriesAmount = document.getElementById('calories-amount').value;
@@ -241,12 +277,7 @@ function getFilteredRecipes(criterion) {
   // if(criterion.carbs > )
   //  if match matchingRecipes.push(currentRecipe)
 
-  // TODO remove this, here just for testing purpose
-  matchingRecipes.push(chickenMushroomGnocchi)
-  matchingRecipes.push(chocolateChipCookie)
 
-  return matchingRecipes
-}
 
 findRecipesButton.addEventListener('click', function() {
   const criterion = {
@@ -262,5 +293,5 @@ findRecipesButton.addEventListener('click', function() {
   // myElement.contentText = 'blabla'
 })
   return chocolateChipCookie
+}
 
-}cr
