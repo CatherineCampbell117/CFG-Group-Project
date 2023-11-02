@@ -206,10 +206,10 @@ const chickenFajita = {
 }
 
  
+document.write("Welcome to the Macro Calculator website")
 
 
-
-let recipesList = [
+const recipesList = [
   chickenMushroomGnocchi,
   chocolateChipCookie,
   warmChickenSalad,
@@ -218,8 +218,14 @@ let recipesList = [
 ]
 
 
+const value = document.getElementById("recipeList").textContent;
+let result = "";
 
+for(let i = 0; i < 5; i++)
+result += value + " ";
 
+document.getElementById("recipeList").textContent = result;
+console.log(recipeList)
 
 // let totalProteins = chickenBreast.protein + redOnion.protein + redPepper.protein + redChili.protein + oliveOil.protein + lime.protein + tortillas.protein + mixedSalad.protein + freshSalsa.protein;
 // let totalFats = chickenBreast.fat + redOnion.fat + redPepper.fat + redChili.fat + oliveOil.fat + lime.fat + tortillas.fat + mixedSalad.fat + freshSalsa.fat;
